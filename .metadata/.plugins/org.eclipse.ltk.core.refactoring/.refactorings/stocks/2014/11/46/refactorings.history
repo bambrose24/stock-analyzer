@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;main.Downloader.ensureLastIsToday(...)&apos; to &apos;update&apos;&#x0D;&#x0A;- Original project: &apos;stocks&apos;&#x0D;&#x0A;- Original element: &apos;main.Downloader.ensureLastIsToday(...)&apos;&#x0D;&#x0A;- Renamed element: &apos;main.Downloader.update(...)&apos;&#x0D;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;ensureLastIsToday&apos;" flags="589826" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;main{Downloader.java[Downloader~ensureLastIsToday~QFile;" name="update" references="true" stamp="1416090474377" version="1.0"/>
+</session>

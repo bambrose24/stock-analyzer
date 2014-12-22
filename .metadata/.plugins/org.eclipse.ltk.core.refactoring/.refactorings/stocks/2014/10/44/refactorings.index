@@ -1,0 +1,10 @@
+1414442581586	Delete element
+1414443925364	Delete element
+1414469071981	Rename package 'calculation'
+1414469101789	Move compilation unit
+1414469203696	Rename type 'Analyzer'
+1414469255543	Rename package 'financial'
+1414526192648	Rename field 'file'
+1414527520539	Encapsulate field 'startFile'
+1414527526590	Encapsulate field 'stopFile'
+1414529150677	Encapsulate field 'stockNum'
