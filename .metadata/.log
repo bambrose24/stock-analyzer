@@ -1865,3 +1865,15 @@ org.eclipse.jgit.errors.TransportException: Nothing to push.
 
 !ENTRY org.eclipse.egit.ui 4 0 2014-12-22 19:10:59.787
 !MESSAGE Can't connect to any repository: https://github.com/bambrose24/stock-analyzer.git (Nothing to push.)
+
+!ENTRY org.eclipse.egit.core 4 0 2014-12-22 19:18:07.655
+!MESSAGE An exception occurred during push on URI https://www.github.com/bambrose24/stock-analyzer: https://www.github.com/bambrose24/stock-analyzer: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://www.github.com/bambrose24/stock-analyzer: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:501)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:399)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:154)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1173)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:197)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:206)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
