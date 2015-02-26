@@ -1,0 +1,5 @@
+package big_brother;
+
+public interface Analyzer {
+
+}

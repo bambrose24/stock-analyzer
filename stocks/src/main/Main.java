@@ -28,8 +28,7 @@ public class Main {
 			}
 
 			ImmatureAnalyzer an = new ImmatureAnalyzer(dataList);
-			ArrayList<Projection> arr = an.getAnalyses();
-			arr.clear();
+			an.getAnalyses();
 			
 //			Simulator s = new Simulator(dataList, -5.0, 10.0);
 //			s.simulate();

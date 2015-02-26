@@ -13,7 +13,7 @@ import java.util.regex.Pattern;
 import data.DataSet;
 import data.Projection;
 
-public class ImmatureAnalyzer {
+public class ImmatureAnalyzer implements Analyzer {
 
 	public ArrayList<DataSet> dataSets;
 
@@ -21,14 +21,7 @@ public class ImmatureAnalyzer {
 		this.dataSets = dataSets;
 	}
 
-	public ArrayList<Projection> getAnalyses() throws IOException {
-
-		Calendar today = Calendar.getInstance();
-		int day = today.get(Calendar.DAY_OF_MONTH) - 1;
-		int month = today.get(Calendar.MONTH) + 1;
-		int year = today.get(Calendar.YEAR);
-
-		ArrayList<Projection> projs = new ArrayList<>();
+	public void getAnalyses() throws IOException {
 
 		System.out.println("\nstarting analysis...");
 		long analysisStart = System.currentTimeMillis();
@@ -43,7 +36,7 @@ public class ImmatureAnalyzer {
 						new FileOutputStream(outFile));
 
 				String intro = ds.getCompany().getAbbrev()
-						+ "'s Mediocre Analysis (by Bob Ambrose)";
+						+ "'s Mediocre Analysis (by Bob Ambrose)\n";
 				bo.write(intro.getBytes());
 
 				File inFile = ds.getFile();
@@ -69,7 +62,5 @@ public class ImmatureAnalyzer {
 		long analysisEnd = System.currentTimeMillis();
 		System.out.println("done with analysis (time "
 				+ (analysisEnd - analysisStart) + ")");
-
-		return projs;
 	}
 }
